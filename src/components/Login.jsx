@@ -21,7 +21,7 @@ const Login = () => {
         email,
         password
       );
-      console.log("User logged in:", userCredential.user);
+      //   console.log("User logged in:", userCredential.user);
       navigate("/dashboard");
     } catch (error) {
       console.error(error);
@@ -31,7 +31,7 @@ const Login = () => {
   const handleGoogleLogin = async () => {
     try {
       const userCredential = await signInWithPopup(auth, provider);
-      console.log("User logged in:", userCredential.user);
+      //   console.log("User logged in:", userCredential.user);
       navigate("/dashboard");
     } catch (error) {
       console.error(error);
